@@ -1,63 +1,154 @@
 const help = (prefix) => {
-	return `> *Sticker Commands* <
-command : *${prefix}sticker* or *${prefix}stiker*
-desc : converter imagem / gif / vídeo em adesivo
-usage : responder imagem / gif / vídeo ou enviar imagem / gif / vídeo com legenda\n
-command : *${prefix}sticker nobg* or *${prefix}stiker nobg*
-desc : converter imagem em adesivo removendo o fundo
-usage : reply image, or send image with caption\n
-command : *${prefix}toimg*
-desc : converter adesivo em imagem
-usage : reply sticker\n
-command : *${prefix}tsticker* or *${prefix}tstiker*
-desc : converter texto em adesivo
-usage : *${prefix}tsticker text in here*\n
-> *Meme Commands* <
-command : *${prefix}meme*
-desc : imagens aleatórias de meme [english]
-usage : just send the command\n
-command : *${prefix}memeindo*
-desc : imagens aleatórias de meme [indo]
-usage : apenas envie o comando\n
-> *Others Commands* <
-command : *${prefix}gtts*
-desc : converter texto em fala / áudio
-usage : *${prefix}gtts [cc] [text]*\nexemplo : *${prefix}gtts ja On2-chan*\n
-command : *${prefix}loli*
-desc : imagens aleatórias de loli
-usage : apenas envie o comando\n
-command : *${prefix}nsfwloli*
-desc : imagens aleatórias de nsfw loli
-usage: basta enviar o comando\n
-command : *${prefix}url2img*
-desc : take web screenshots
-usage : *${prefix}url2img [tipe] [url]*\n
-command : *${prefix}simi*
-desc : sua mensagem será respondida por simi
-usage : *${prefix}simi yourmessage*\n
-command : *${prefix}ocr*
-desc : pegue o texto na foto
-usage : responder imagem ou enviar imagem com legenda\n
-command : *${prefix}wait*
-desc : search anime with image [ What Anime Is This/That ]
-usage : responder imagem ou enviar imagem com legendan\n
-command : *${prefix}setprefix*
-desc : substituir prefixo
-usage : *${prefix}setprefix [text|optional]*\nexample : *${prefix}setprefix ?*
-note : This command can only be used by the bot owner\n
-> *Group Comands* <
-command : *${prefix}linkgroup*
-desc : pegue o link do grupo
-usage : just send the command\
-note : can only be used when the bot becomes admin, and the one who sends the command is admin!\n
-command : *${prefix}tagall*
-desc : marca todos os membros do grupo, incluindo administradores também
-usage : apenas envie o comando
-note : Este comando pode ser usado se você for um administrador do grupo\n
-command : *${prefix}simih*
-desc : ative o modo simi no grupo
-usage : *${prefix}simih 1* to activate simi mode and *${prefix}simih 0* para desativar o modo simi
-note : Este comando pode ser usado se você for um admin\n`
+	return `┏┳┳┅┅┅┅┅┅┅┅┅┅┅┓
+
+┋┋┋ *Ａｙｓｌｌａｎ*
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┛
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}sticker* ou *${prefix}stiker*
+desc : Converter imagem / gif / vídeo em adesivo
+uso : Responder imagem / gif / vídeo ou enviar imagem / gif / vídeo com legenda\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}toimg*
+desc : Converter adesivo em imagem
+uso : Responda a sticker\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}meme*
+desc : Imagens aleatórias de meme [english]
+uso : Apenas envie o comando\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}gtts*
+desc : Converter texto em fala / áudio
+uso : *${prefix}gtts [cc] [text]*\nexemplo : *${prefix}gtts pt Oi sou um bot*\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}ocr*
+desc : Pegue o texto na foto
+uso : Responder imagem ou enviar imagem com legenda\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}setprefix*
+desc : Substituir prefixo
+uso : *${prefix}setprefix [text|optional]*\nexamplo : *${prefix}setprefix ?*
+nota : Este comando só pode ser usado pelo proprietário do bot\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}clearall*
+desc : Excluir conversas abertas do bot
+uso : Apenas envie o comando
+nota : Este comando só pode ser usado pelo proprietário do bot\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}kick*
+desc : Banir membro do grupo
+uso : *${prefix}kick [@number]*\nexamplo : *${prefix}kick @number*
+nota : Este comando só pode ser usado se você for um administrador do grupo
+nota² : Este comando só pode ser usado se o bot for um administrador do grupo\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}add*
+desc : Adiciona membro ao grupo
+uso : *${prefix}add [number]*\nexample : *${prefix}add 551198129xxxx*
+nota : Este comando só pode ser usado se você for um administrador do grupo
+nota² : Este comando só pode ser usado se o bot for um administrador do grupo\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}welcome 1*
+desc : Ativa mensagem de boas vindas
+uso : Apenas envie o comando
+nota : Este comando só pode ser usado se você for um administrador do grupo\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}welcome 0*
+desc : Desativa mensagem de boas vindas
+uso : Apenas envie o comando
+nota : Este comando só pode ser usado se você for um administrador do grupo\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}bc*
+desc : Transmissão para todos chats abertos do bot
+uso : *${prefix}bc [text]*\nexamplo : *${prefix}bc text*
+nota : Este comando só pode ser usado pelo proprietário do bot\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}tagall*
+desc : Marca todos os membros do grupo, incluindo administradores também
+uso : Apenas envie o comando
+nota : Este comando só pode ser usado se você for um administrador do grupo\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}info*
+desc : Exibe algumas informações do bot
+uso : Apenas envie o comando\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}madara*
+desc : Gera cartões de créditos validos para aprovação
+uso : Apenas envie o comando
+nota : Este comando só pode ser usado pelo proprietário do bot\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}clone*
+desc : Copia a imagem de perfil do membro do grupo marcado
+uso : Envie o comando marcando alguem. Exemplo: *{prefix}clone @number*
+nota : Este comando só pode ser usado pelo proprietário do bot\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}egrila*
+desc : Mostra a porcentagem atual do quão e-girl a Isabela é
+uso : Apenas envie o comando
+nota : Este comando será inutil, é apenas uma brincadeira\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}paz*
+desc : Mostra a porcentagem de quanta paz a Isabela tem
+uso : Apenas envie o comando
+nota : Este comando será inutil, é apenas uma brincadeira\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}dubla*
+desc : Mano, o cara dublou as torre gêmeas, ainda não to acreditando
+uso : Apenas envie o comando
+nota : Este comando será inutil, é apenas uma brincadeira\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+comando : *${prefix}lzz*
+desc : Mostra a porcentagem do quão gado é o lzz
+uso : Apenas envie o comando
+nota : Este comando será inutil, é apenas uma brincadeira\n
+
+┋┋┣┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅
+
+
+┋┋┋ *Ａｙｓｌｌａｎ*
+
+┗┻┻┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┛`
 }
 
 exports.help = help
